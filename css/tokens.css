@@ -1,0 +1,237 @@
+
+/* =========================================================
+   MARTÍN BERASATEGUI CULINARY HUB
+   Brandbook 2026
+   Design tokens & local typography
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   01. TYPOGRAPHY — PLUS JAKARTA SANS
+   --------------------------------------------------------- */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-Medium.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-SemiBold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-Bold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-ExtraBold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-Italic.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+/* ---------------------------------------------------------
+   02. BRAND COLORS
+   Brandbook: page 24
+   --------------------------------------------------------- */
+
+:root {
+  /* Corporate palette */
+  --color-brand-primary: #C4052A;
+  --color-brand-primary-hover: #A90424;
+  --color-brand-primary-soft: rgba(196, 5, 42, 0.12);
+
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+
+  /*
+   * Crema: provisional visual approximation.
+   * Confirm the exact value against the original brand assets.
+   */
+  --color-cream: #D7D2C5;
+
+
+  /* -------------------------------------------------------
+     03. INTERFACE BACKGROUNDS
+     ------------------------------------------------------- */
+
+  --color-bg: var(--color-black);
+  --color-bg-elevated: #151515;
+  --color-bg-card: #202020;
+  --color-bg-card-hover: #2B2B2B;
+
+  --color-bg-light: var(--color-white);
+  --color-bg-cream: var(--color-cream);
+
+
+  /* -------------------------------------------------------
+     04. TEXT COLORS
+     ------------------------------------------------------- */
+
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: #D0D0D0;
+  --color-text-muted: #999999;
+
+  --color-text-dark: var(--color-black);
+  --color-text-dark-secondary: #444444;
+
+
+  /* -------------------------------------------------------
+     05. BORDERS
+     ------------------------------------------------------- */
+
+  --color-border: rgba(255, 255, 255, 0.18);
+  --color-border-strong: rgba(255, 255, 255, 0.35);
+
+  --color-border-dark: rgba(0, 0, 0, 0.14);
+  --color-border-dark-strong: rgba(0, 0, 0, 0.24);
+
+
+  /* -------------------------------------------------------
+     06. TYPOGRAPHY
+     ------------------------------------------------------- */
+
+  --font-primary: "Plus Jakarta Sans", Arial, sans-serif;
+
+  /*
+   * The official logo should be used as an image or vector.
+   * Do not recreate the handwritten brand signature with text.
+   */
+  --font-brand: "Supreme LL Jumbo", "Arial Narrow", sans-serif;
+
+  --font-editorial: "Plus Jakarta Sans", Arial, sans-serif;
+
+
+  /* Font sizes */
+
+  --font-size-xs: 0.72rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+
+  --font-size-display: clamp(3rem, 6.5vw, 6.75rem);
+
+
+  /* Font weights */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+
+  /* -------------------------------------------------------
+     07. SPACING SCALE
+     ------------------------------------------------------- */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+
+  /* -------------------------------------------------------
+     08. LAYOUT
+     ------------------------------------------------------- */
+
+  --container-width: 1440px;
+  --content-width: 1200px;
+
+  --page-gutter: clamp(1.25rem, 5vw, 5rem);
+
+  --header-height: 88px;
+
+
+  /* -------------------------------------------------------
+     09. BORDERS & RADII
+     ------------------------------------------------------- */
+
+  --border-width: 1px;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-pill: 999px;
+
+
+  /* -------------------------------------------------------
+     10. SHADOWS
+     ------------------------------------------------------- */
+
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.18);
+
+  --shadow-modal: 0 24px 80px rgba(0, 0, 0, 0.48);
+
+
+  /* -------------------------------------------------------
+     11. TRANSITIONS
+     ------------------------------------------------------- */
+
+  --transition-fast: 160ms ease;
+  --transition-base: 280ms ease;
+  --transition-slow: 500ms ease;
+
+
+  /* -------------------------------------------------------
+     12. Z-INDEX
+     ------------------------------------------------------- */
+
+  --z-base: 1;
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+
+
+  /* -------------------------------------------------------
+     13. ACCESSIBILITY
+     ------------------------------------------------------- */
+
+  --focus-outline: 3px solid #C4052A;
+  --focus-offset: 4px;
+}
